@@ -4,13 +4,13 @@
 
 ``` bash
 location / {
-  		#ws监听的回环端口
-        #不清楚的，cat /etc/v2ray/config.json
-        #看一下inbounds port
-        proxy_pass http://127.0.0.1:56000; 
-  		proxy_http_version 1.1;
-  		proxy_set_header Upgrade $http_upgrade;
-  		proxy_set_header Connection "upgrade";
-  		proxy_set_header Host $http_host;
+		#ws监听的回环端口
+		#不清楚的，cat /etc/v2ray/config.json
+		#看一下inbounds port
+		proxy_pass http://127.0.0.1:56000; 
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
+		proxy_set_header Host $http_host;
 }
 ```
